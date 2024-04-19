@@ -1,0 +1,27 @@
+@use '../../../scss/variables' as *;
+
+.root {
+  width: 672px;
+  text-align: center;
+}
+
+.item {
+  border: 2px solid $color-button-primary-bg--hover;
+  padding: 10px 15px;
+
+  &--wins, &--time {
+    cursor: pointer;
+  }
+}
+
+.winner { 
+  td {
+    padding: 10px 15px;
+    border: 2px solid $color-button-primary-bg--hover;
+  }
+
+  svg {
+    height: 48px;
+    width: fit-content;
+  }
+}

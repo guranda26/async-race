@@ -1,0 +1,58 @@
+@use '../../../scss/variables' as *;
+
+.root {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  height: fit-content;
+  gap: 10px;
+  color: $color-text-light;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  font-size: 4.4rem;
+  text-align: center;
+  font-style: italic;
+  font-weight: 800;
+  background: linear-gradient(-45deg, #edaa96, #3e041a, #90c4d7, #c0ece2);
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient 15s ease infinite;
+  margin-bottom: 20px;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.footer {
+  height: 44px;
+  display: flex;
+  gap: 5px;
+}
+
+.message {
+  position: fixed;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: $color-text-winner;
+  font-size: 6.4rem;
+  text-align: center;
+}
